@@ -15,8 +15,6 @@ class Calculator2:
 
         return response
 
-
-    
     def __validate_body(self, body: Dict) -> float:
         if "numbers" not in body:
             raise Exception("Incorrect body")

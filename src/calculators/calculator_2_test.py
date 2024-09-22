@@ -12,6 +12,9 @@ class MockDriverHandler(DriverHandlerInterface):
     def standard_derivation(self, numbers: List[float]) -> float:
         random_mock_value = 3
         return random_mock_value
+    
+    def variance(self, numbers: List[float]) -> float:
+        pass
 
 def test_calculate():
     mock_request = MockRequest({
